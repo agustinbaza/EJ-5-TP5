@@ -48,10 +48,8 @@ footer {
 }
 
 .sombra {
-  text-shadow: 0 0 5px rgb(255, 73, 73),
-   0 0 10px rgb(255, 73, 73),
-   0 0 15px rgb(255, 73, 73),
-   0 0 25px rgb(255, 73, 73);
+  text-shadow: 0 0 5px rgb(255, 73, 73), 0 0 10px rgb(255, 73, 73),
+    0 0 15px rgb(255, 73, 73), 0 0 25px rgb(255, 73, 73);
 }
 
 .imagen {
@@ -91,7 +89,7 @@ footer {
     width: 40%;
     height: 40%;
   }
-  
+
   .orden {
     display: flex;
     justify-content: center;
@@ -119,7 +117,7 @@ footer {
     width: 30%;
     height: 30%;
   }
-  
+
   .orden {
     display: flex;
     justify-content: center;
