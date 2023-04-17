@@ -1,5 +1,4 @@
 const horaTotal = document.getElementById("cronometro");
-
 let horas = 0,
   minutos = 0,
   segundos = 0;
@@ -17,20 +16,11 @@ function funcionamiento() {
     horas++;
   }
 
+  const seg = segundos < 10 ? "0" + segundos : segundos;
+  const min = minutos < 10 ? "0" + minutos : minutos;
+  const hr = horas < 10 ? "0" + horas : horas;
 
-  if (segundos < 10) {
-    segundos = "0" + segundos;
-  }
-
-  if (minutos < 10) {
-    minutos = "0" + minutos;
-  }
-
-  if (horas < 10) {
-    horas = "0" + horas;
-  }
-
-  horaTotal.innerHTML = `${horas}:${minutos}:${segundos}`;
+  horaTotal.innerHTML = `${hr}:${min}:${seg}`;
 }
 
 function iniciar() {
@@ -38,5 +28,5 @@ function iniciar() {
 }
 
 function pausa() {
-    clearInterval(intervalo);
+  clearInterval(intervalo);
 }
